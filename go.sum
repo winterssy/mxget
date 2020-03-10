@@ -78,12 +78,10 @@ github.com/ugorji/go/codec v1.1.7 h1:2SvQaVZ1ouYrrKKwoSk2pzd4A9evlKJb9oTL+OaLUSs
 github.com/ugorji/go/codec v1.1.7/go.mod h1:Ax+UKWsSmolVDwsd+7N3ZtXu+yMGCf907BLYF3GoBXY=
 github.com/winterssy/bufferpool v0.0.0-20200229012952-527e7777fcd3 h1:hNn8ALenX7lFAh2ZSlseyv+xzYOyaWpaTLMoU7xhtM4=
 github.com/winterssy/bufferpool v0.0.0-20200229012952-527e7777fcd3/go.mod h1:Ys+2xIWb2KNMf2jI1xTlebh5Fblja7LyxlhU2xWfbPU=
-github.com/winterssy/ghttp v0.0.0-20200304012109-d89a1ce52a8e h1:N/FHQTtA2+oNFlUuJBljOkuREGnFBDPVH63EIpDSzIg=
-github.com/winterssy/ghttp v0.0.0-20200304012109-d89a1ce52a8e/go.mod h1:UwacemxvqreENbUVL6TDgKvevg0kDhyPSRHakvZgxGc=
-github.com/winterssy/gjson v0.0.0-20200303165818-ba395c113d1f h1:MT4aq94hz9I3VgZfh2wDNknKN5HkNuJ84dtvPUDPXYQ=
-github.com/winterssy/gjson v0.0.0-20200303165818-ba395c113d1f/go.mod h1:Hq+tE5rN41nrDvD925cOO3YVjwFixLcs/CDUcULGpKQ=
-github.com/winterssy/glog v0.0.0-20200228102426-fee3073d5366 h1:bVczHr80MhUtzSV0ZqZuvlEyfEdDuUTgHiyZCcBDsS8=
-github.com/winterssy/glog v0.0.0-20200228102426-fee3073d5366/go.mod h1:mfPteEcvScBEXrZeLQibrZXgjpH+FPVMPz2HMfwlrZI=
+github.com/winterssy/ghttp v0.0.0-20200310005252-b14cb4acc8a2 h1:H2ApAJMhFnR5D1BpWrvASUdYFsWncvNzprHVW8+j3K0=
+github.com/winterssy/ghttp v0.0.0-20200310005252-b14cb4acc8a2/go.mod h1:F5JtqLq8U0RO8uPNFzT1Tx4gMFNN2Ei49JLSYsoTBDA=
+github.com/winterssy/gjson v0.0.0-20200306020332-1f68efaec187 h1:NuUeupnBUlIDdH4du0pa+XvbQFiUZ9Vk/UvkUBPxAJI=
+github.com/winterssy/gjson v0.0.0-20200306020332-1f68efaec187/go.mod h1:Hq+tE5rN41nrDvD925cOO3YVjwFixLcs/CDUcULGpKQ=
 github.com/winterssy/glog v0.0.0-20200305052031-8e145d5ae4ef h1:+hyXi0jM14nEFaEzgdTmYMH/Ze8a6o664wOFdXbhXrA=
 github.com/winterssy/glog v0.0.0-20200305052031-8e145d5ae4ef/go.mod h1:VD6ii1erDvLeFH2DZO7frqCbLWPFhNsVUon3S9twr/E=
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=

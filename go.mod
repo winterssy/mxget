@@ -12,8 +12,8 @@ require (
 	github.com/spf13/cobra v0.0.5
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/stretchr/testify v1.4.0
-	github.com/winterssy/ghttp v0.0.0-20200304012109-d89a1ce52a8e
-	github.com/winterssy/gjson v0.0.0-20200303165818-ba395c113d1f
+	github.com/winterssy/ghttp v0.0.0-20200310005252-b14cb4acc8a2
+	github.com/winterssy/gjson v0.0.0-20200306020332-1f68efaec187
 	github.com/winterssy/glog v0.0.0-20200305052031-8e145d5ae4ef
 	golang.org/x/net v0.0.0-20200301022130-244492dfa37a // indirect
 	golang.org/x/sys v0.0.0-20200212091648-12a6c2dcc1e4 // indirect
