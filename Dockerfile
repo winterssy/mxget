@@ -14,4 +14,4 @@ COPY --from=builder /build/mxget /usr/local/bin/
 
 CMD ["mxget", "serve"]
 
-EXPOSE 8080 8090
+EXPOSE 8080
