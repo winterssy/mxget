@@ -17,3 +17,5 @@
 # vendor/
 
 .idea/
+downloads/
+vendor/
