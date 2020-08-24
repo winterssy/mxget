@@ -36,11 +36,18 @@ var (
 	std = New(request.DefaultClient)
 
 	defaultCookie = createCookie()
-	defaultCookies = createCookie()
 
 	defaultHeaders = ghttp.Headers{
 		"Origin":  "https://music.163.com",
 		"Referer": "https://music.163.com",
+	}
+
+	defaultCookieList = map[string]string{
+		"os":            "linux",
+		"appver":        "1.0.0.1026",
+		"osver":         "Ubuntu%2016.10",
+		"MUSIC_U":       "78d411095f4b022667bc8ec49e9a44cca088df057d987f5feaf066d37458e41c4a7d9447977352cf27ea9fee03f6ec4441049cea1c6bb9b6",
+		"__remember_me": "true",
 	}
 )
 
@@ -174,14 +181,6 @@ func createCookie() *http.Cookie {
 	}
 }
 
-func createCookies() (c []*http.Cookie) {
-	list := map[string]
-	return &http.Cookie{
-		Name:  "_ntes_nuid",
-		Value: hex.EncodeToString(b),
-	}
-}
-
 func New(client *ghttp.Client) *API {
 	return &API{
 		Client: client,
@@ -240,37 +239,12 @@ func (a *API) SendRequest(req *ghttp.Request) (*ghttp.Response, error) {
 		req.AddCookie(defaultCookie)
 	}
 
-	c1 := &http.Cookie{
-		Name:  "os",
-		Value: "linux",
+	for key, value := range defaultCookieList {
+		req.AddCookie(&http.Cookie{
+			Name:  key,
+			Value: value,
+		})
 	}
-
-	c2 := &http.Cookie{
-		Name:  "appver",
-		Value: "1.0.0.1026",
-	}
-
-	c3 := &http.Cookie{
-		Name:  "osver",
-		Value: "Ubuntu%2016.10",
-	}
-
-	c4 := &http.Cookie{
-		Name:  "MUSIC_U",
-		Value: "78d411095f4b022667bc8ec49e9a44cca088df057d987f5feaf066d37458e41c4a7d9447977352cf27ea9fee03f6ec4441049cea1c6bb9b6",
-	}
-
-	c5 := &http.Cookie{
-		Name:  "__remember_me",
-		Value: "true",
-	}
-
-	req.AddCookie(c1)
-	req.AddCookie(c2)
-	req.AddCookie(c3)
-	req.AddCookie(c4)
-	req.AddCookie(c5)
-
 	return a.Client.Do(req)
 }
 
